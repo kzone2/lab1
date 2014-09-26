@@ -17,6 +17,7 @@ public class guessingGame {
 		else{
 			System.out.println("There are forces working against you and you suck at life. Goodbye");
 		}	
+		System.out.println("Done");
 	}
 
 }
