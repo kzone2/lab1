@@ -9,15 +9,18 @@ public class guessingGame {
 		System.out.println("Guess a number between 1 and 10");
 		Scanner in = new Scanner(System.in);
 		
-		int guess = in.nextInt();
-		
-		if(guess == answer){
-			System.out.println("Correct, the answer is " + answer + " you have gambled and won!");
+		while(true){
+			int guess = in.nextInt();
+			
+			if(guess == answer){
+				System.out.println("Correct, the answer is " + answer + " you have gambled and won!");
+				break;
+			}
+			else{
+				System.out.println("You are bad at guessing. Try again.");
+			}	
 		}
-		else{
-			System.out.println("There are forces working against you and you suck at life. Goodbye");
-		}	
-		System.out.println("Done");
+		
 	}
 
 }
