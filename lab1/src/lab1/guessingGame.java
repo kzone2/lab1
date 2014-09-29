@@ -8,8 +8,11 @@ public class guessingGame {
 		int answer = rn.nextInt(10) + 1;
 		System.out.println("Guess a number between 1 and 10");
 		Scanner in = new Scanner(System.in);
+		int attempts = 0;
 		
 		while(true){
+			attempts++;
+			System.out.println("Attempt: " + attempts);
 			int guess = in.nextInt();
 			
 			if(guess == answer){
